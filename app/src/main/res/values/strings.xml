@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Assignment_7</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_location">Add location</string>
+    <string name="bookmark">Book mark</string>
+    <string name="select_proper_location">Select proper location</string>
+    <string name="select_proper_area">Select proper area</string>
+    <string name="enable_permission">Enable permission</string>
+    <string name="select_proper_city">Select proper city</string>
+    <string name="city_list">City List</string>
+    <string name="no_city_right_now">NO city added now</string>
+    <string name="city_name">City Name</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperature_min">Temperature Min</string>
+    <string name="temperature_max">Temperature Max</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="rain">Rain</string>
+    <string name="wind_degree">Wind Degree</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="book_marked"> is book marked</string>
+    <string name="iconBattery">Icon battery</string>
+</resources>
