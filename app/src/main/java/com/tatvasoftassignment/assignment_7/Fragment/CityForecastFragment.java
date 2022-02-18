@@ -21,9 +21,8 @@ import com.tatvasoftassignment.assignment_7.Utils.Constants;
 
 public class CityForecastFragment extends Fragment {
 
-    @SuppressLint("StaticFieldLeak")
+
     public static TextView txtTempDetail, txtTempMinDetail, txtTempMaxDetail, txtHumidityDetail, txtPressureDetail, txtRainDetail, txtWindDegreeDetail, txtWindSpeedDetail, txtBatteryPercentage;
-    @SuppressLint("StaticFieldLeak")
     public static ImageView iconBattery;
 
     public CityForecastFragment() {

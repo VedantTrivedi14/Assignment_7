@@ -26,7 +26,7 @@ import java.net.URL;
 public class CityTask extends AsyncTask<String, String, String> {
 
 
-    @SuppressLint("StaticFieldLeak")
+
     Context ctx;
 
     public CityTask(Context context) {

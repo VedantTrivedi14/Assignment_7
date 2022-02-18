@@ -35,7 +35,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return new RecyclerViewHolder(view);
     }
 
-    @SuppressLint("NotifyDataSetChanged")
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewAdapter.RecyclerViewHolder holder, int position) {
         holder.txtCityName.setText(cityList.get(position));

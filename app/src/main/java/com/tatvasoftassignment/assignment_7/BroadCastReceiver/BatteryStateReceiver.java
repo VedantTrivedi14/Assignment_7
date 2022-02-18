@@ -12,7 +12,7 @@ import com.tatvasoftassignment.assignment_7.R;
 public class BatteryStateReceiver extends BroadcastReceiver {
 
 
-    @SuppressLint("UnsafeProtectedBroadcastReceiver")
+
     @Override
     public void onReceive(Context context, Intent intent) {
 

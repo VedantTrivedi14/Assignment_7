@@ -67,7 +67,7 @@ public class CityFragment extends Fragment {
         setDataToCityList();
     }
 
-    @SuppressLint("NotifyDataSetChanged")
+
     public void setDataToCityList() {
         Cursor data = db.getData();
         if (data.getCount() == 0) {
