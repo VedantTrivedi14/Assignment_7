@@ -53,7 +53,7 @@ public class MapsFragment extends Fragment {
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         if (mapFragment != null) {
 
-            mapFragment.getMapAsync(googleMap -> googleMap.setOnMapClickListener(latLng -> {
+            mapFragment.getMapAsync(googleMap -> googleMap.setOnMapClickListener((LatLng latLng) -> {
                 mGoogleMap = googleMap;
                 mGoogleMap.clear();
                 mLatLng = latLng;
@@ -84,8 +84,10 @@ public class MapsFragment extends Fragment {
             }));
         }
         btnMap.setOnClickListener(view1 -> {
-            db.insertData(bookmarkCity + "");
-            Toast.makeText(getContext(), bookmarkCity + getString(R.string.book_marked), Toast.LENGTH_SHORT).show();
+            if(bookmarkCity != null) {
+                db.insertData(bookmarkCity + "");
+                Toast.makeText(getContext(), bookmarkCity + getString(R.string.book_marked), Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
