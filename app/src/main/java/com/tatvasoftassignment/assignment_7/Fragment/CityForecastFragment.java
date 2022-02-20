@@ -1,6 +1,5 @@
 package com.tatvasoftassignment.assignment_7.Fragment;
 
-import android.annotation.SuppressLint;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.LayoutInflater;

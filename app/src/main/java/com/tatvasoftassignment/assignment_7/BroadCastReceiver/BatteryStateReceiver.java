@@ -26,9 +26,9 @@ public class BatteryStateReceiver extends BroadcastReceiver {
         } else if (batteryLevel > 20 && batteryLevel <= 40) {
             CityForecastFragment.iconBattery.setImageResource(R.drawable.ic_baseline_battery_3_bar_24);
         } else if (batteryLevel > 40 && batteryLevel <= 60) {
-            CityForecastFragment.iconBattery.setImageResource(R.drawable.ic_baseline_battery_5_bar_24);
+            CityForecastFragment.iconBattery.setImageResource(R.drawable.ic_baseline_battery_4_bar_24);
         } else if(batteryLevel > 60 && batteryLevel <= 80){
-            CityForecastFragment.iconBattery.setImageResource(R.drawable.ic_baseline_battery_6_bar_24);
+            CityForecastFragment.iconBattery.setImageResource(R.drawable.ic_baseline_battery_5_bar_24);
         }else{
             CityForecastFragment.iconBattery.setImageResource(R.drawable.ic_baseline_battery_full_24);
         }

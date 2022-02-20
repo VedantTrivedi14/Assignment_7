@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_1_bar_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_4_bar_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_5_bar_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_alert_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_full_24.xml" value="0.1265" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/city_list_item_view.xml" value="0.23229166666666667" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/fragment_city.xml" value="0.23229166666666667" />

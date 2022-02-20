@@ -4,7 +4,6 @@ import static com.tatvasoftassignment.assignment_7.Fragment.MapsFragment.mGoogle
 import static com.tatvasoftassignment.assignment_7.Fragment.MapsFragment.mLatLng;
 import static com.tatvasoftassignment.assignment_7.Fragment.MapsFragment.markerOptions;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
@@ -62,8 +61,7 @@ public class CityTask extends AsyncTask<String, String, String> {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return "";
-
+        return " ";
 
     }
 
@@ -79,7 +77,7 @@ public class CityTask extends AsyncTask<String, String, String> {
             markerOptions.position(mLatLng);
             mGoogleMap.addMarker(markerOptions);
             mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mLatLng, 7));
-            MapsFragment.bookmarkCity = cityName;
+            if(!cityName.isEmpty()) { MapsFragment.bookmarkCity = cityName;}
 
         } catch (JSONException e) {
             e.printStackTrace();

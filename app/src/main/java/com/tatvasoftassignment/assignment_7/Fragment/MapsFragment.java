@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class MapsFragment extends Fragment {
-    public static String bookmarkCity = "";
+    public static String bookmarkCity;
     public static String cityName = "";
     public static GoogleMap mGoogleMap;
     public static LatLng mLatLng;
@@ -85,7 +85,7 @@ public class MapsFragment extends Fragment {
         }
         btnMap.setOnClickListener(view1 -> {
             if(bookmarkCity != null) {
-                db.insertData(bookmarkCity + "");
+                db.insertData(bookmarkCity);
                 Toast.makeText(getContext(), bookmarkCity + getString(R.string.book_marked), Toast.LENGTH_SHORT).show();
             }
         });
