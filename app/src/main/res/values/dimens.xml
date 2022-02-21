@@ -2,8 +2,9 @@
 <resources>
 
     <dimen name="textSize">20sp</dimen>
-    <dimen name="margin">10dp</dimen>
+    <dimen name="margin">5dp</dimen>
     <dimen name="padding">10dp</dimen>
     <dimen name="margin_start_end">20dp</dimen>
     <dimen name="txt_size">18sp</dimen>
+    <dimen name="margin1">10dp</dimen>
 </resources>

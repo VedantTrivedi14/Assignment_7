@@ -21,4 +21,7 @@
     <string name="wind_speed">Wind Speed</string>
     <string name="book_marked">Book marked</string>
     <string name="iconBattery">Icon battery</string>
+    <string name="delete">Delete</string>
+    <string name="battery_state">Battery State</string>
+    <string name="weather">Weather</string>
 </resources>

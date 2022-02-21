@@ -10,17 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
-        android:background="@color/purple_500"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/txtCityName"
-            android:layout_width="0dp"
+            android:id="@+id/txtBatteryState"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_margin="@dimen/margin1"
             android:padding="@dimen/padding"
-            android:text="@string/city_name"
-            android:textColor="@color/white"
+            android:text="@string/battery_state"
+            android:textColor="@color/black"
             android:textSize="@dimen/textSize" />
 
         <TextView
@@ -38,8 +37,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin"
-        android:background="@color/purple_500">
+        android:layout_margin="@dimen/margin">
 
         <TableRow style="@style/tableRow">
 

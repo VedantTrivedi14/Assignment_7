@@ -3,17 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_add_location_24.xml" value="0.1265" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_1_bar_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_3_bar_24.xml" value="0.1265" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_4_bar_24.xml" value="0.1265" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_5_bar_24.xml" value="0.1265" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_alert_24.xml" value="0.1265" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_battery_full_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1265" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/city_list_item_view.xml" value="0.23229166666666667" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/fragment_city.xml" value="0.23229166666666667" />
-        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/fragment_city_forecast.xml" value="0.23229166666666667" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/fragment_city_forecast.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/layout/fragment_maps.xml" value="0.23229166666666667" />
         <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/menu/add_location_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/Assignment_7/app/src/main/res/menu/delete_city_menu.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft_Android/Assignment_7/app/src/main/res/drawable/ic_baseline_add_location_24.xml" value="0.1255" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft_Android/Assignment_7/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1255" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft_Android/Assignment_7/app/src/main/res/drawable/ic_battery_100_.xml" value="0.132" />

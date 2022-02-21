@@ -1,6 +1,5 @@
 package com.tatvasoftassignment.assignment_7.Fragment;
 
-import android.annotation.SuppressLint;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,11 +23,12 @@ import com.tatvasoftassignment.assignment_7.Database.DbHelper;
 import com.tatvasoftassignment.assignment_7.R;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 
 public class CityFragment extends Fragment {
 
-    private final ArrayList<String> cityList = new ArrayList<>();
+    public static final ArrayList<String> cityList = new ArrayList<>();
     private RecyclerViewAdapter adapter;
     private DbHelper db;
     private TextView txtMassage;
@@ -54,6 +55,7 @@ public class CityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Objects.requireNonNull(((AppCompatActivity) requireActivity()).getSupportActionBar()).setTitle(R.string.city_list);
         return inflater.inflate(R.layout.fragment_city, container, false);
     }
 
