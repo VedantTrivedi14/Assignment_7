@@ -84,9 +84,9 @@ public class MapsFragment extends Fragment {
             }));
         }
         btnMap.setOnClickListener(view1 -> {
-            if(bookmarkCity != null) {
+            if(bookmarkCity != null ) {
                 db.insertData(bookmarkCity);
-                Toast.makeText(getContext(), bookmarkCity + getString(R.string.book_marked), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MapsFragment.this.getContext(), bookmarkCity +" "+ MapsFragment.this.getString(R.string.book_marked), Toast.LENGTH_SHORT).show();
             }
         });
     }

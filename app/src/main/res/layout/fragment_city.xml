@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Fragment.CityFragment">
 
@@ -10,7 +10,10 @@
         android:id="@+id/txtTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:background="@color/purple_500"
         android:gravity="center"
         android:text="@string/city_list"
@@ -31,8 +34,13 @@
         android:id="@+id/txtMassage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/recCityList"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:text="@string/no_city_right_now"
         android:textColor="@color/design_default_color_primary"
-        android:visibility="invisible" />
+        android:visibility="gone" />
 </RelativeLayout>

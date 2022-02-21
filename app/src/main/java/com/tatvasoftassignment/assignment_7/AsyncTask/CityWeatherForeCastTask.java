@@ -18,16 +18,19 @@ import java.net.URL;
 public class CityWeatherForeCastTask extends AsyncTask<String, String, String> {
 
     static boolean isPresent = true;
-
+    private final static String BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=";
+    private final static String API_ID = "fae7190d7e6433ec3a45285ffcf55c86";
+    HttpURLConnection connection;
+    InputStream inputStream;
     public CityWeatherForeCastTask() {
     }
 
     @Override
     protected String doInBackground(String... strings) {
-        HttpURLConnection connection;
-        InputStream inputStream;
+        connection = null;
+        inputStream = null;
         try {
-            URL url = new URL(String.format("%s%s&APPID=%s", "http://api.openweathermap.org/data/2.5/weather?q=", strings[0], "fae7190d7e6433ec3a45285ffcf55c86"));
+            URL url = new URL(String.format("%s%s&APPID=%s", BASE_URL, strings[0], API_ID));
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setDoInput(true);
