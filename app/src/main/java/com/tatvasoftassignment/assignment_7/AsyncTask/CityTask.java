@@ -19,6 +19,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -29,10 +30,10 @@ public class CityTask extends AsyncTask<String, String, String> {
     private final static String API_ID = "fae7190d7e6433ec3a45285ffcf55c86";
     HttpURLConnection connection;
     InputStream inputStream;
-    Context ctx;
+    WeakReference<Context> contextRef;
 
     public CityTask(Context context) {
-        this.ctx = context;
+        contextRef = new WeakReference<>(context);
     }
 
     @Override
@@ -80,11 +81,13 @@ public class CityTask extends AsyncTask<String, String, String> {
             markerOptions.position(mLatLng);
             mGoogleMap.addMarker(markerOptions);
             mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mLatLng, 7));
-            if(!cityName.isEmpty()) { MapsFragment.bookmarkCity = cityName;}
+            if (!cityName.isEmpty()) {
+                MapsFragment.bookmarkCity = cityName;
+            }
 
         } catch (JSONException e) {
             e.printStackTrace();
-            Toast.makeText(ctx, R.string.select_proper_city, Toast.LENGTH_SHORT).show();
+            Toast.makeText(contextRef.get(), R.string.select_proper_city, Toast.LENGTH_SHORT).show();
 
         }
     }

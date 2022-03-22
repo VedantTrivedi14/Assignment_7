@@ -7,4 +7,5 @@
     <dimen name="margin_start_end">20dp</dimen>
     <dimen name="txt_size">18sp</dimen>
     <dimen name="margin1">10dp</dimen>
+    <dimen name="width_height">0dp</dimen>
 </resources>

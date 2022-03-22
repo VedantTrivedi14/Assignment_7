@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".Fragment.CityForecastFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/width_height"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
-        android:orientation="horizontal">
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/txtBatteryState"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/margin1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin1"
+            android:layout_marginEnd="@dimen/margin1"
+            android:layout_marginBottom="@dimen/margin1"
             android:padding="@dimen/padding"
             android:text="@string/battery_state"
             android:textColor="@color/black"
@@ -25,19 +32,27 @@
         <TextView
             android:id="@+id/txtBatteryPercentage"
             style="@style/styleLinearLayout"
+            android:layout_toEndOf="@+id/txtBatteryState"
             android:contentDescription="@string/city_list" />
 
         <ImageView
             android:id="@+id/iconBattery"
             style="@style/styleLinearLayout"
+            android:layout_toEndOf="@+id/txtBatteryPercentage"
             android:contentDescription="@string/iconBattery" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin">
+        android:layout_margin="@dimen/margin"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TableRow style="@style/tableRow">
 
@@ -148,4 +163,4 @@
 
     </TableLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
