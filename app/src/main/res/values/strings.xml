@@ -24,4 +24,5 @@
     <string name="delete">Delete</string>
     <string name="battery_state">Battery State</string>
     <string name="weather">Weather</string>
+    <string name="exist">This city is already exist</string>
 </resources>
