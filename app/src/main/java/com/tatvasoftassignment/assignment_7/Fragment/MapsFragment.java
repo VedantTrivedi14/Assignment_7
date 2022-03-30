@@ -84,9 +84,17 @@ public class MapsFragment extends Fragment {
             }));
         }
         btnMap.setOnClickListener(view1 -> {
-            if(bookmarkCity != null ) {
-                db.insertData(bookmarkCity);
-                Toast.makeText(MapsFragment.this.getContext(), bookmarkCity +" "+ MapsFragment.this.getString(R.string.book_marked), Toast.LENGTH_SHORT).show();
+            if (bookmarkCity != null) {
+
+                boolean recordExists = db.checkIfRecordExist(bookmarkCity);
+                if (recordExists) {
+                    Toast.makeText(getContext(), getString(R.string.exist), Toast.LENGTH_SHORT).show();
+                } else {
+                    db.insertData(bookmarkCity);
+                    Toast.makeText(getContext(), bookmarkCity + " " + MapsFragment.this.getString(R.string.book_marked), Toast.LENGTH_SHORT).show();
+                }
+
+
             }
         });
     }
