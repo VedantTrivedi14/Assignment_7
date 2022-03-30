@@ -15,16 +15,15 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class CityWeatherForeCastTask extends AsyncTask<String, String, String> {
+public class CityWeatherForeCastTask extends BackGroundTask {
 
     static boolean isPresent = true;
     private final static String BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=";
     private final static String API_ID = "fae7190d7e6433ec3a45285ffcf55c86";
     HttpURLConnection connection;
     InputStream inputStream;
-    public CityWeatherForeCastTask() {
-    }
 
+//original
     @Override
     protected String doInBackground(String... strings) {
         connection = null;

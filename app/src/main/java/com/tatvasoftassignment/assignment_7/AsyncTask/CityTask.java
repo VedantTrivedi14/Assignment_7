@@ -23,19 +23,17 @@ import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class CityTask extends AsyncTask<String, String, String> {
+public class CityTask extends BackGroundTask {
 
 
     private final static String BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=";
     private final static String API_ID = "fae7190d7e6433ec3a45285ffcf55c86";
     HttpURLConnection connection;
     InputStream inputStream;
-    WeakReference<Context> contextRef;
-
+    Context context;
     public CityTask(Context context) {
-        contextRef = new WeakReference<>(context);
+        this.context = context;
     }
-
     @Override
     protected String doInBackground(String... strings) {
 
@@ -87,7 +85,7 @@ public class CityTask extends AsyncTask<String, String, String> {
 
         } catch (JSONException e) {
             e.printStackTrace();
-            Toast.makeText(contextRef.get(), R.string.select_proper_city, Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, R.string.select_proper_city, Toast.LENGTH_SHORT).show();
 
         }
     }
