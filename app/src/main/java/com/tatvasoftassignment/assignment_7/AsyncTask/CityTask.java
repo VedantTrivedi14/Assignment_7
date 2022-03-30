@@ -5,7 +5,6 @@ import static com.tatvasoftassignment.assignment_7.Fragment.MapsFragment.mLatLng
 import static com.tatvasoftassignment.assignment_7.Fragment.MapsFragment.markerOptions;
 
 import android.content.Context;
-import android.os.AsyncTask;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -19,7 +18,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.URL;
 

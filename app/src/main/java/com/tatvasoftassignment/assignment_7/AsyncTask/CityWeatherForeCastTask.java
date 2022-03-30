@@ -1,6 +1,6 @@
 package com.tatvasoftassignment.assignment_7.AsyncTask;
 
-import android.os.AsyncTask;
+
 import android.util.Log;
 
 import com.tatvasoftassignment.assignment_7.Fragment.CityForecastFragment;
